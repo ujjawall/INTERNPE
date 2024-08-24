@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0e0e0;
+}
+
+.game-container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(7, 50px);
+    grid-template-rows: repeat(6, 50px);
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell.red {
+    background-color: red;
+}
+
+.cell.yellow {
+    background-color: yellow;
+}
+
+.player-info {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.red-text {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.yellow-text {
+    color: yellow;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.player-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+.red-icon {
+    background-color: red;
+}
+
+.yellow-icon {
+    background-color: yellow;
+}
+
+.game-result {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
